@@ -1,0 +1,11 @@
+[Unit]
+Description=Updates Weather and Time Every Minute
+Requires=updateLCD.service
+
+[Timer]
+Unit=updateLCD.service
+OnCalendar=*-*-* *:*:00
+AccuracySec=1
+
+[Install]
+WantedBy=timers.target

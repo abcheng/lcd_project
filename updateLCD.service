@@ -1,0 +1,10 @@
+[Unit]
+Description=Grabs Weather data and date / time and updates LCD
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3.6 /home/rock64/updateTimeAndWeather.py
+User=rock64
+
+[Install]
+WantedBy=multi-user.target
