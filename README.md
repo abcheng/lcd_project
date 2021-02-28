@@ -17,7 +17,7 @@ The main point of this code is to demonstrate how anyone can access an API throu
 5) Move the 10-i2c-perms.rules if needed for your device to /etc/udev/rules.d folder. Make sure to go in and change OWNER= to whichever user will be running the code. In my case, I was using Ubuntu on a Rock64, and the default user was rock64.
 6) Make sure to enable the timer which runs the python every minute by typing the following command: "systemctl enable updateLCD.timer"
 7) You can increase and decrease the interval in which the timer runs the Python script. You can either search for systemd.timer or type in man systemd.timer to get more instructions on how to do this.
-8) If you plan on displaying the weather on your LCD like me, sign up for an API key from a company that provides weather information. I used openweathermap since it was free, but feel free to use something else if you prefer. Make sure to change put in your zip code in the updateTimeAndWeather.py file in the url where it says {your_zip_code_here}, and the API key with {insert_api_key_here}
+8) If you plan on displaying the weather on your LCD like me, sign up for an API key from a company that provides weather information. I used openweathermap since it was free, but feel free to use something else if you prefer. Make sure to change put in your zip code in the updateTimeAndWeather.py file in the url where it says {your_zip_code_here}, and the API key with {insert_your_app_id_here}
 9) Fingers crossed, you'll see the date, time, and weather info on your screen.
 
 Happy coding !
